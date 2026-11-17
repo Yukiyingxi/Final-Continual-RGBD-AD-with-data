@@ -1,0 +1,57 @@
+# ===== Python 环境（绝不提交）=====
+env/
+**/env/
+.venv/
+venv/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ===== 本地数据 / 备份（绝不提交）=====
+/data_local_backup_20261111/
+data/
+dataset/
+datasets/
+**/MVTech3D*/
+*.npy
+*.npz
+*.pkl
+*.h5
+*.ply
+*.obj
+*.stl
+
+# ===== 模型权重与训练产物 =====
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.tar
+*.zip
+checkpoints/
+runs/
+logs/
+outputs/
+results/
+
+# ===== 图像 / 视频输出（论文图单独手动 add）=====
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+
+# ===== 系统与编辑器 =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ===== 其他 =====
+*.log
+nohup.out
+core.*

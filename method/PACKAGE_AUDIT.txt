@@ -1,0 +1,47 @@
+FINAL PACKAGE AUDIT
+timestamp=2026-08-12 22:34:30 CST
+package=/root/autodl-tmp/Final-Continual-RGBD-AD
+method=fixed 0.5 RGB + 0.5 depth, jitter, one classifier, joint CFNS+DSNS
+protocol=6-1-1-1-1
+replay_samples=0
+per_example_features_saved=0
+checkpoint_hashes:
+stage_0_checkpoint.pth: OK
+stage_1_checkpoint.pth: OK
+stage_2_checkpoint.pth: OK
+stage_3_checkpoint.pth: OK
+stage_4_checkpoint.pth: OK
+data_and_dataloader:
+/root/autodl-tmp/Final-Continual-RGBD-AD/method/code/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/autodl-tmp/Final-Continual-RGBD-AD/method/code/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/autodl-tmp/Final-Continual-RGBD-AD/method/code/dinov2/layers/block.py:38: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+/root/autodl-tmp/Final-Continual-RGBD-AD/method/code/tips/vision_transformer.py:176: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+DATALOADER_BUILD=PASS
+TRAIN_LENGTHS= {'bagel': 244, 'cable_gland': 223, 'carrot': 286, 'cookie': 210, 'dowel': 288, 'foam': 236, 'peach': 361, 'potato': 300, 'rope': 298, 'tire': 210}
+TEST_LENGTHS= {'bagel': 110, 'cable_gland': 108, 'carrot': 159, 'cookie': 131, 'dowel': 130, 'foam': 100, 'peach': 132, 'potato': 114, 'rope': 101, 'tire': 112}
+RGBD_SHAPE= (6, 392, 392) MASK_SHAPE= (1, 392, 392)
+forbidden_exploration_files:
+NONE
+broken_symlinks:
+NONE
+final_metric:
+4,Mean,0.7856365460899304,0.9305653891053101,0.9817284400027944,0.4410945039071306,0.9399676119357497,0.36353920888272034
+RESULT=PASS
+
+SETTINGS INTERFACE AUDIT
+timestamp=2026-08-14 CST
+supported_settings=10-0,9-1,6-4,6-1x4
+partitions=10;9+1;6+4;6+1+1+1+1
+verified_result_setting=6-1x4
+other_setting_results_claimed=NO
+train_source_compile=PASS
+launcher_syntax=PASS
+dry_run_all_no_write=PASS
+setting_partition_assertions=PASS
+resume_prefix_guard=PASS
+retained_checkpoint_hashes=PASS
+RESULT=PASS
